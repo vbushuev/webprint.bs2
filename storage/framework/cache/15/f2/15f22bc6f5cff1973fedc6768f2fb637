@@ -1,0 +1,26 @@
+1508294522a:1:{s:14:"breadcrumb.htm";a:6:{s:8:"fileName";s:14:"breadcrumb.htm";s:7:"content";s:395:"description = "Крошки"
+==
+<div class="ui breadcrumb container medium">
+    {% set i = 1 %}
+    {% for item in items %}
+        {% if items|length == i %}
+            <a class="active section">{{item}}</a>
+        {% else%}
+            <a class="section">{{item}}</a>
+            <i class="right angle icon divider"></i>
+        {% endif%}
+        {% set i = i+1 %}
+    {% endfor %}
+</div>
+";s:5:"mtime";i:1508288149;s:6:"markup";s:362:"<div class="ui breadcrumb container medium">
+    {% set i = 1 %}
+    {% for item in items %}
+        {% if items|length == i %}
+            <a class="active section">{{item}}</a>
+        {% else%}
+            <a class="section">{{item}}</a>
+            <i class="right angle icon divider"></i>
+        {% endif%}
+        {% set i = i+1 %}
+    {% endfor %}
+</div>";s:4:"code";N;s:11:"description";s:12:"Крошки";}}

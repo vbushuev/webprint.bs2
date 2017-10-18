@@ -1,0 +1,10 @@
+name: CategoryController
+modelClass: Vsb\Store\Models\Category
+form: $/vsb/store/models/category/fields.yaml
+defaultRedirect: vsb/store/categorycontroller
+create:
+    redirect: 'vsb/store/categorycontroller/update/:id'
+    redirectClose: vsb/store/categorycontroller
+update:
+    redirect: vsb/store/categorycontroller
+    redirectClose: vsb/store/categorycontroller

@@ -1,0 +1,10 @@
+name: PaperController
+form: $/vsb/store/models/paper/fields.yaml
+modelClass: Vsb\Store\Models\Paper
+defaultRedirect: vsb/store/papercontroller
+create:
+    redirect: 'vsb/store/papercontroller/update/:id'
+    redirectClose: vsb/store/papercontroller
+update:
+    redirect: vsb/store/papercontroller
+    redirectClose: vsb/store/papercontroller

@@ -1,0 +1,12 @@
+fields:
+    status:
+        label: Статус
+        oc.commentPosition: ''
+        options:
+            new: Новый
+            confirmed: Подтвержден
+        span: auto
+        context:
+            - update
+            - preview
+        type: dropdown

@@ -1,0 +1,10 @@
+name: ProductController
+form: $/vsb/store/models/product/fields.yaml
+modelClass: Vsb\Store\Models\Product
+defaultRedirect: vsb/store/productcontroller
+create:
+    redirect: 'vsb/store/productcontroller/update/:id'
+    redirectClose: vsb/store/productcontroller
+update:
+    redirect: vsb/store/productcontroller
+    redirectClose: vsb/store/productcontroller

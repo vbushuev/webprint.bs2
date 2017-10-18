@@ -1,0 +1,4 @@
+title: PaperController
+modelClass: Vsb\Store\Models\Paper
+toolbar:
+    buttons: reorder_toolbar

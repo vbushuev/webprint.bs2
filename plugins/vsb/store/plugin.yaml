@@ -1,0 +1,50 @@
+plugin:
+    name: 'vsb.store::lang.plugin.name'
+    description: 'vsb.store::lang.plugin.description'
+    author: vsb
+    icon: oc-icon-shopping-cart
+    homepage: ''
+permissions:
+    manager.orders:
+        tab: 'Управление заказами'
+        label: 'Управление заказами'
+    manager.store:
+        tab: 'Управление продукцией'
+        label: 'Управление продукцией'
+navigation:
+    main-menu-item:
+        label: Магазин
+        url: vsb/store/ordercontroller
+        icon: icon-shopping-cart
+        permissions:
+            - manager.store
+        order: '0'
+        sideMenu:
+            side-menu-item:
+                label: Заказы
+                url: vsb/store/ordercontroller
+                icon: icon-cart-arrow-down
+            side-menu-item1:
+                label: Категории
+                url: vsb/store/categorycontroller
+                icon: icon-sitemap
+                permissions:
+                    - manager.store
+            side-menu-item2:
+                label: Продукты
+                url: vsb/store/productcontroller
+                icon: icon-ticket
+                permissions:
+                    - manager.store
+            side-menu-item3:
+                label: Бумага
+                url: vsb/store/productcontroller
+                icon: icon-paper-plane
+                permissions:
+                    - manager.store
+            side-menu-item4:
+                label: Тиражи
+                url: vsb/store/papercontroller
+                icon: icon-list-ol
+                permissions:
+                    - manager.store

@@ -1,0 +1,17 @@
+description = "Меню"
+==
+<div class="ui borderless menu stackable massive six item">
+    <div class="ui dropdown item {% if active=='order' %} active {% endif %}" href="/">
+        Заказ
+        <i class="dropdown icon"></i>
+        <div class="menu">
+            <a class="item">Готовые шаблоны</a>
+            <a class="item">Онлайн Конструктор</a>
+            <a class="item">По Вашему макету</a>
+        </div>
+    </div>
+    <a class="item {% if active=='products' %} active {% endif %}" href="/products">Полиграфия</a>
+    <a class="item {% if active=='papers' %} active {% endif %}" href="/paper">Бумага</a>
+    <a class="item {% if active=='prices' %} active {% endif %}" href="/prices">Цены</a>
+    <a class="item {% if active=='contacts' %} active {% endif %}" href="/contacts">Контакты</a>
+</div>

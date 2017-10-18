@@ -1,0 +1,4 @@
+title: OrderController
+modelClass: Vsb\Store\Models\Order
+toolbar:
+    buttons: reorder_toolbar

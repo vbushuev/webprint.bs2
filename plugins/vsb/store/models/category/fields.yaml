@@ -1,0 +1,39 @@
+tabs:
+    fields:
+        title:
+            label: Наименование
+            oc.commentPosition: ''
+            span: full
+            required: 1
+            type: text
+            tab: Общие
+        description:
+            label: Описание
+            size: ''
+            oc.commentPosition: ''
+            span: full
+            type: textarea
+            tab: Общие
+        parent_id:
+            label: Родительская
+            oc.commentPosition: ''
+            span: auto
+            type: dropdown
+            tab: Общие
+        order:
+            label: Порядок
+            oc.commentPosition: ''
+            span: auto
+            type: number
+            tab: Общие
+        image:
+            label: Изображение
+            oc.commentPosition: ''
+            mode: file
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: auto
+            type: fileupload
+            tab: Изображение

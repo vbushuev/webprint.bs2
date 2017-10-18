@@ -1,0 +1,10 @@
+name: OrderController
+form: $/vsb/store/models/order/fields.yaml
+modelClass: Vsb\Store\Models\Order
+defaultRedirect: vsb/store/ordercontroller
+create:
+    redirect: 'vsb/store/ordercontroller/update/:id'
+    redirectClose: vsb/store/ordercontroller
+update:
+    redirect: vsb/store/ordercontroller
+    redirectClose: vsb/store/ordercontroller

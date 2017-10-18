@@ -1,0 +1,19 @@
+columns:
+    imageThumb:
+        label: Изображение
+        searchable: false
+        sortable: false
+        type: partial
+        path: image_thumb
+    title:
+        label: Наименование
+        type: text
+    description:
+        label: Описание
+        type: text
+    parent_id:
+        label: 'Родительская категория'
+        type: number
+    order:
+        label: Порядок
+        type: number

@@ -1,0 +1,23 @@
+fields:
+    title:
+        label: 'vsb.store::lang.plugin.title'
+        oc.commentPosition: ''
+        span: full
+        required: 1
+        type: text
+    description:
+        label: 'vsb.store::lang.plugin.description'
+        size: ''
+        oc.commentPosition: ''
+        span: full
+        type: textarea
+    image:
+        label: 'vsb.store::lang.plugin.image'
+        oc.commentPosition: ''
+        mode: file
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload

@@ -1,0 +1,15 @@
+columns:
+    imageThumb:
+        label: vsb.store::lang.plugin.image
+        searchable: false
+        sortable: false
+        type: partial
+        path: image_thumb
+    title:
+        label: vsb.store::lang.plugin.title
+        type: text
+        searchable: true
+        sortable: true
+    description:
+        label: vsb.store::lang.plugin.description
+        type: text

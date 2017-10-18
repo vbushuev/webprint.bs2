@@ -1,0 +1,15 @@
+columns:
+    id:
+        label: '#'
+        type: number
+        searchable: false
+        sortable: true
+    user_id:
+        label: 'Клиент #'
+        type: number
+    user:
+        label: Клиент
+        type: text
+        searchable: true
+        select: name
+        relation: user

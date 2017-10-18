@@ -1,0 +1,4 @@
+title: CategoryController
+modelClass: Vsb\Store\Models\Category
+toolbar:
+    buttons: reorder_toolbar

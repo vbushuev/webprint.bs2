@@ -1,0 +1,14 @@
+title = "Main page"
+url = "/"
+layout = "default"
+==
+
+{% partial 'navigation' active="order" %}
+
+<div class="ui main centered container">
+    {% partial 'breadcrumb' items=["Главная","Полиграфия","Визитки"] %}
+    <div class="column">
+        Hello Trill
+    </div>
+
+</div>

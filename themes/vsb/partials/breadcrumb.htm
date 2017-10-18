@@ -1,0 +1,14 @@
+description = "Крошки"
+==
+<div class="ui breadcrumb container medium">
+    {% set i = 1 %}
+    {% for item in items %}
+        {% if items|length == i %}
+            <a class="active section">{{item}}</a>
+        {% else%}
+            <a class="section">{{item}}</a>
+            <i class="right angle icon divider"></i>
+        {% endif%}
+        {% set i = i+1 %}
+    {% endfor %}
+</div>

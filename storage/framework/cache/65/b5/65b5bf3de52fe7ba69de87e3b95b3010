@@ -1,0 +1,23 @@
+1508306856a:1:{s:8:"main.htm";a:8:{s:8:"fileName";s:8:"main.htm";s:7:"content";s:297:"title = "Main page"
+url = "/"
+layout = "default"
+==
+
+{% partial 'navigation' active="order" %}
+
+<div class="ui main centered container">
+    {% partial 'breadcrumb' items=["Главная","Полиграфия","Визитки"] %}
+    <div class="column">
+        Hello Trill
+    </div>
+
+</div>
+";s:5:"mtime";i:1508290876;s:6:"markup";s:243:"{% partial 'navigation' active="order" %}
+
+<div class="ui main centered container">
+    {% partial 'breadcrumb' items=["Главная","Полиграфия","Визитки"] %}
+    <div class="column">
+        Hello Trill
+    </div>
+
+</div>";s:4:"code";N;s:5:"title";s:9:"Main page";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";}}
