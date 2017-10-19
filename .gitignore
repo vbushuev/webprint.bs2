@@ -1,2 +1,3 @@
 *.styl
 .access
+storage/*
