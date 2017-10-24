@@ -1,0 +1,92 @@
+title = "Contuctor page"
+url = "/contructor"
+layout = "default"
+==
+function onStart(){
+    $this->addJs('http://cdnjs.cloudflare.com/ajax/libs/fabric.js/1.7.19/fabric.min.js');
+    $this->addJs('/themes/vsb/assets/js/constructor.js');
+}
+==
+{% partial 'navigation' active="#" %}
+<div class="ui main container">
+
+    {% partial 'breadcrumb' items=["Главная","Визитки","Конструктор"] %}
+    <h2 class="ui dividing header">
+        Конструктор
+        <a class="anchor" id="header"></a>
+    </h2>
+    <div class="ui segment basic stackable">
+        <div id="constructor" class="constructor ui grid two column">
+            <div class="row two column">
+                <div class="column six wide" id="panel_container">
+                    <div class="ui tabular menu attached">
+                       <!-- <a class="item active" data-tab="tab-objects">Объекты</a> -->
+                       <a class="item active" data-tab="tab-add">Добавить</a>
+                       <a class="item" data-tab="tab-background">Фон</a>
+                       <a class="item" data-tab="tab-templates">Шаблоны</a>
+                    </div>
+                    <div class="ui tab attached segment active" data-tab="tab-add">
+                        <div class="ui relaxed divided list">
+                            <div class="item vsb-add-text">
+                                <i class="large aligned middle paragraph icon"></i>
+                                <div class="content">
+                                    <a class="header">Текст</a>
+                                    <div class="description">Добавьте любой текст</div>
+                                </div>
+                            </div>
+                            <div class="item vsb-add-sticker">
+                                <i class="large aligned middle star icon"></i>
+                                <div class="content">
+                                    <a class="header">Стикер</a>
+                                    <div class="description">Добавьте стикер</div>
+                                </div>
+                            </div>
+                            <div class="item vsb-add-image">
+                                <i class="large aligned middle image icon"></i>
+                                <div class="content">
+                                    <a class="header">Изображение</a>
+                                    <div class="description">Загрузите любое Ваше изображение</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui tab attached segment colors-picker scrolled" data-tab="tab-background">
+                        <button type="button" class="ui massive none icon button" data-category="backgroundColor" data-value="none"></button>
+                        <button type="button" class="ui massive red icon button" data-category="backgroundColor" data-value="red"></button>
+                        <button type="button" class="ui massive orange icon button" data-category="backgroundColor" data-value="orange"></button>
+                        <button type="button" class="ui massive yellow icon button" data-category="backgroundColor" data-value="yellow"></button>
+                        <button type="button" class="ui massive olive icon button" data-category="backgroundColor" data-value="olive"></button>
+                        <button type="button" class="ui massive green icon button" data-category="backgroundColor" data-value="green"></button>
+                        <button type="button" class="ui massive teal icon button" data-category="backgroundColor" data-value="teal"></button>
+                        <button type="button" class="ui massive blue icon button" data-category="backgroundColor" data-value="blue"></button>
+                        <button type="button" class="ui massive violet icon button" data-category="backgroundColor" data-value="violet"></button>
+                        <button type="button" class="ui massive purple icon button" data-category="backgroundColor" data-value="purple"></button>
+                        <button type="button" class="ui massive purple icon button" data-category="backgroundColor" data-value="purple"></button>
+                        <button type="button" class="ui massive pink icon button" data-category="backgroundColor" data-value="pink"></button>
+                        <button type="button" class="ui massive brown icon button" data-category="backgroundColor" data-value="brown"></button>
+                        <button type="button" class="ui massive grey icon button" data-category="backgroundColor" data-value="grey"></button>
+                        <button type="button" class="ui massive black icon button" data-category="backgroundColor" data-value="black"></button>
+                        <button type="button" class="ui massive white icon button" data-category="backgroundColor" data-value="white"></button>
+                    </div>
+                    <div class="ui tab attached segment" data-tab="tab-templates"></div>
+                </div>
+                <div class="column ten wide">
+                    <div id="settings_container"></div>
+                    <div  id="canvas_container">
+                        <canvas id="canvas"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="row two column">
+                <div class="column six wide"></div>
+                <div class="column ten wide">
+                    <button id='checkout' class="ui button primary right floated">Оформить заказ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="ui segment stackable">
+        &nbsp;
+    </div> -->
+</div>
+{% partial 'footer'%}

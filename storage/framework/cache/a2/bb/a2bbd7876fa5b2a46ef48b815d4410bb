@@ -1,4 +1,4 @@
-1508386639a:1:{s:14:"navigation.htm";a:6:{s:8:"fileName";s:14:"navigation.htm";s:7:"content";s:889:"description = "Меню"
+1508818685a:1:{s:14:"navigation.htm";a:6:{s:8:"fileName";s:14:"navigation.htm";s:7:"content";s:908:"description = "Меню"
 ==
 <div class="ui borderless menu stackable massive six item">
     <div class="ui dropdown item {% if active=='order' %} active {% endif %}" href="/">
@@ -6,7 +6,7 @@
         <i class="dropdown icon"></i>
         <div class="menu">
             <a class="item">Готовые шаблоны</a>
-            <a class="item">Онлайн Конструктор</a>
+            <a class="item" href="/contructor">Онлайн Конструктор</a>
             <a class="item">По Вашему макету</a>
         </div>
     </div>
@@ -15,13 +15,13 @@
     <a class="item {% if active=='prices' %} active {% endif %}" href="/prices">Цены</a>
     <a class="item {% if active=='contacts' %} active {% endif %}" href="/contacts">Контакты</a>
 </div>
-";s:5:"mtime";i:1508294044;s:6:"markup";s:860:"<div class="ui borderless menu stackable massive six item">
+";s:5:"mtime";i:1508396784;s:6:"markup";s:879:"<div class="ui borderless menu stackable massive six item">
     <div class="ui dropdown item {% if active=='order' %} active {% endif %}" href="/">
         Заказ
         <i class="dropdown icon"></i>
         <div class="menu">
             <a class="item">Готовые шаблоны</a>
-            <a class="item">Онлайн Конструктор</a>
+            <a class="item" href="/contructor">Онлайн Конструктор</a>
             <a class="item">По Вашему макету</a>
         </div>
     </div>

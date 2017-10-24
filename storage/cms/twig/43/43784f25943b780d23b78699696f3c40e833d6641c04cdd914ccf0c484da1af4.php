@@ -122,9 +122,11 @@ class __TwigTemplate_14ec371b6a8267f2a3c8ecb8ec5c52a734c26206811246822165db54b24
     </div>
 
 </div>
-<!-- <div class=\"ui footer\">
-    footer
-</div> -->";
+";
+        // line 97
+        $context['__cms_partial_params'] = [];
+        echo $this->env->getExtension('CMS')->partialFunction("footer"        , $context['__cms_partial_params']        );
+        unset($context['__cms_partial_params']);
     }
 
     public function getTemplateName()
@@ -139,7 +141,7 @@ class __TwigTemplate_14ec371b6a8267f2a3c8ecb8ec5c52a734c26206811246822165db54b24
 
     public function getDebugInfo()
     {
-        return array (  33 => 5,  28 => 4,  24 => 2,  19 => 1,);
+        return array (  127 => 97,  33 => 5,  28 => 4,  24 => 2,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -248,8 +250,6 @@ class __TwigTemplate_14ec371b6a8267f2a3c8ecb8ec5c52a734c26206811246822165db54b24
     </div>
 
 </div>
-<!-- <div class=\"ui footer\">
-    footer
-</div> -->", "/Applications/AMPPS/www/webprint.bs2/themes/vsb/pages/contacts.htm", "");
+{% partial 'footer'%}", "/Applications/AMPPS/www/webprint.bs2/themes/vsb/pages/contacts.htm", "");
     }
 }

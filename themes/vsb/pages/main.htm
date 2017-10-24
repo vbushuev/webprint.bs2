@@ -5,10 +5,33 @@ layout = "default"
 
 {% partial 'navigation' active="order" %}
 
-<div class="ui main centered container">
-    {% partial 'breadcrumb' items=["Главная","Полиграфия","Визитки"] %}
-    <div class="column">
-        Hello Trill
-    </div>
 
+<div class="full height conyainer">
+    {% partial 'breadcrumb' items=["Главная","Полиграфия","Визитки"] %}
+    <div class="ui stripe vertical segment">
+
+    </div>
+    <div class="ui alternate stripe vertical segment">
+        <div class="ui stackable center aligned grid container">
+            <div class="fourteen wide column">
+                <h1 class="ui icon header">
+                    <img class="ui inline icon image" src="/images/icons/rocket.png">
+                    Liberate your Development
+                </h1>
+                <div class="ui stackable center aligned vertically padded grid">
+                    <div class="eight wide column">
+                        <h3 class="ui header">Enterprise Ready</h3>
+                        <p>Build tools, performance logging, support for custom definitions, multiple-levels of theme inheritance—a developer's dream.</p>
+                        <a class="ui large right labeled primary icon button" href="/introduction/getting-started.html">
+                            <i class="right chevron icon"></i>
+                            Get Started Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+
+{% partial 'footer'%}

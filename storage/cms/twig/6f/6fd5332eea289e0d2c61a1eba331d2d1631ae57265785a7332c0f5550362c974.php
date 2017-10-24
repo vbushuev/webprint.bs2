@@ -27,7 +27,7 @@ class __TwigTemplate_afc433c473ebef9827987b47c85eaba3de346088a7844a508b9bb781349
         <i class=\"dropdown icon\"></i>
         <div class=\"menu\">
             <a class=\"item\">Готовые шаблоны</a>
-            <a class=\"item\">Онлайн Конструктор</a>
+            <a class=\"item\" href=\"/contructor\">Онлайн Конструктор</a>
             <a class=\"item\">По Вашему макету</a>
         </div>
     </div>
@@ -89,7 +89,7 @@ class __TwigTemplate_afc433c473ebef9827987b47c85eaba3de346088a7844a508b9bb781349
         <i class=\"dropdown icon\"></i>
         <div class=\"menu\">
             <a class=\"item\">Готовые шаблоны</a>
-            <a class=\"item\">Онлайн Конструктор</a>
+            <a class=\"item\" href=\"/contructor\">Онлайн Конструктор</a>
             <a class=\"item\">По Вашему макету</a>
         </div>
     </div>

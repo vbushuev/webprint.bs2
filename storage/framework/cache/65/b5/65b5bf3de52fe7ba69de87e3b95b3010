@@ -1,23 +1,69 @@
-1508386639a:1:{s:8:"main.htm";a:8:{s:8:"fileName";s:8:"main.htm";s:7:"content";s:297:"title = "Main page"
+1508818685a:1:{s:8:"main.htm";a:8:{s:8:"fileName";s:8:"main.htm";s:7:"content";s:1392:"title = "Main page"
 url = "/"
 layout = "default"
 ==
 
 {% partial 'navigation' active="order" %}
 
-<div class="ui main centered container">
-    {% partial 'breadcrumb' items=["Главная","Полиграфия","Визитки"] %}
-    <div class="column">
-        Hello Trill
-    </div>
 
+<div class="full height conyainer">
+    {% partial 'breadcrumb' items=["Главная","Полиграфия","Визитки"] %}
+    <div class="ui stripe vertical segment">
+
+    </div>
+    <div class="ui alternate stripe vertical segment">
+        <div class="ui stackable center aligned grid container">
+            <div class="fourteen wide column">
+                <h1 class="ui icon header">
+                    <img class="ui inline icon image" src="/images/icons/rocket.png">
+                    Liberate your Development
+                </h1>
+                <div class="ui stackable center aligned vertically padded grid">
+                    <div class="eight wide column">
+                        <h3 class="ui header">Enterprise Ready</h3>
+                        <p>Build tools, performance logging, support for custom definitions, multiple-levels of theme inheritance—a developer's dream.</p>
+                        <a class="ui large right labeled primary icon button" href="/introduction/getting-started.html">
+                            <i class="right chevron icon"></i>
+                            Get Started Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-";s:5:"mtime";i:1508290876;s:6:"markup";s:243:"{% partial 'navigation' active="order" %}
 
-<div class="ui main centered container">
+
+{% partial 'footer'%}
+";s:5:"mtime";i:1508396382;s:6:"markup";s:1338:"{% partial 'navigation' active="order" %}
+
+
+<div class="full height conyainer">
     {% partial 'breadcrumb' items=["Главная","Полиграфия","Визитки"] %}
-    <div class="column">
-        Hello Trill
-    </div>
+    <div class="ui stripe vertical segment">
 
-</div>";s:4:"code";N;s:5:"title";s:9:"Main page";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";}}
+    </div>
+    <div class="ui alternate stripe vertical segment">
+        <div class="ui stackable center aligned grid container">
+            <div class="fourteen wide column">
+                <h1 class="ui icon header">
+                    <img class="ui inline icon image" src="/images/icons/rocket.png">
+                    Liberate your Development
+                </h1>
+                <div class="ui stackable center aligned vertically padded grid">
+                    <div class="eight wide column">
+                        <h3 class="ui header">Enterprise Ready</h3>
+                        <p>Build tools, performance logging, support for custom definitions, multiple-levels of theme inheritance—a developer's dream.</p>
+                        <a class="ui large right labeled primary icon button" href="/introduction/getting-started.html">
+                            <i class="right chevron icon"></i>
+                            Get Started Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% partial 'footer'%}";s:4:"code";N;s:5:"title";s:9:"Main page";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";}}
