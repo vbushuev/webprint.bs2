@@ -1,0 +1,10 @@
+name: TemplateController
+form: $/vsb/store/models/producttemplate/fields.yaml
+modelClass: Vsb\Store\Models\ProductTemplate
+defaultRedirect: vsb/store/templatecontroller
+create:
+    redirect: 'vsb/store/templatecontroller/update/:id'
+    redirectClose: vsb/store/templatecontroller
+update:
+    redirect: vsb/store/templatecontroller
+    redirectClose: vsb/store/templatecontroller

@@ -1,0 +1,8 @@
+tabs:
+    fields:
+        store_name:
+            label: 'vsb.pne::lang.settings.store.name'
+            oc.commentPosition: ''
+            span: full
+            type: text
+            tab: 'vsb.pne::lang.settings.store.tab'

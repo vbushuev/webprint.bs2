@@ -1,0 +1,32 @@
+fields:
+    product_id:
+        label: 'vsb.store::lang.plugin.product'
+        oc.commentPosition: ''
+        span: full
+        required: 1
+        type: dropdown
+    name:
+        label: 'vsb.store::lang.plugin.title'
+        oc.commentPosition: ''
+        span: full
+        required: 1
+        type: text
+    price:
+        label: 'vsb.store::lang.plugin.price'
+        oc.commentPosition: ''
+        span: auto
+        required: 1
+        type: number
+    stock_price:
+        label: 'vsb.store::lang.plugin.stock_price'
+        oc.commentPosition: ''
+        span: auto
+        required: 0
+        type: number
+    raw:
+        label: 'Text area'
+        size: giant
+        oc.commentPosition: ''
+        span: full
+        required: 1
+        type: textarea

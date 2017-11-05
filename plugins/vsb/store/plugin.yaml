@@ -48,3 +48,7 @@ navigation:
                 icon: icon-list-ol
                 permissions:
                     - manager.store
+            side-menu-item5:
+                label: 'vsb.store::lang.plugin.templates'
+                url: vsb/store/templatecontroller
+                icon: icon-unsorted

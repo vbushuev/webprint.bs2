@@ -1,0 +1,24 @@
+columns:
+    id:
+        label: 'vsb.store::lang.plugin.id'
+        type: number
+        sortable: true
+    product:
+        label: 'vsb.store::lang.product.name'
+        relation: product
+        sortable: true
+        select: title
+    name:
+        label: 'vsb.store::lang.product.template.name'
+        type: text
+        sortable: true
+    created_at:
+        label: 'vsb.store::lang.plugin.created'
+        type: datetime
+        sortable: true
+    price:
+        label: 'vsb.store::lang.product.template.price'
+        type: number
+    stock_price:
+        label: 'vsb.store::lang.product.template.stock_price'
+        type: number

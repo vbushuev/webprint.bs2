@@ -23,7 +23,7 @@ class ProductCategory extends Model
         'product'=>[
             'Vsb\Store\Models\Product'
         ],
-        'catagory'=>[
+        'category'=>[
             'Vsb\Store\Models\Category'
         ]
     ];

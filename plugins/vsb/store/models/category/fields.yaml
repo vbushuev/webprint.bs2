@@ -7,13 +7,6 @@ tabs:
             required: 1
             type: text
             tab: Общие
-        description:
-            label: Описание
-            size: ''
-            oc.commentPosition: ''
-            span: full
-            type: textarea
-            tab: Общие
         parent_id:
             label: Родительская
             oc.commentPosition: ''
@@ -25,6 +18,13 @@ tabs:
             oc.commentPosition: ''
             span: auto
             type: number
+            tab: Общие
+        description:
+            label: Описание
+            size: small
+            oc.commentPosition: ''
+            span: full
+            type: textarea
             tab: Общие
         image:
             label: Изображение

@@ -37,10 +37,10 @@ class Category extends Model
         return (is_null($prd->image))?'':$prd->image->getThumb(70, 50, ['mode' => 'crop']);
     }
     public function getParentIdOptions(){
-        $res = [];
-        foreach (Category::all() as $category) {
-            $res[$category->id] = $category->title;
-        }
-        return $res;
+        // $res = [];
+        // foreach (Category::all() as $category) {
+        //     $res[$category->id] = $category->title;
+        // }
+        return Category::lists('title','id');
     }
 }

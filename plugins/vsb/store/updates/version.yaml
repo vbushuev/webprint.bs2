@@ -78,3 +78,9 @@
 1.0.27:
     - 'Updated table vsb_store_categories'
     - builder_table_update_vsb_store_categories_2.php
+1.0.28:
+    - 'Updated table vsb_store_product_templates'
+    - builder_table_update_vsb_store_product_templates_2.php
+1.0.29:
+    - 'Updated table vsb_store_product_templates'
+    - builder_table_update_vsb_store_product_templates_3.php

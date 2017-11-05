@@ -1,6 +1,66 @@
-fields:
-    title:
-        label: Наименование
-        oc.commentPosition: ''
-        span: auto
-        type: text
+tabs:
+    fields:
+        title:
+            label: 'vsb.store::lang.product.name'
+            oc.commentPosition: ''
+            span: auto
+            required: 1
+            type: text
+            tab: 'vsb.store::lang.product.settings'
+        visible:
+            label: 'vsb.store::lang.product.visible'
+            span: auto
+            default: 1
+            type: switch
+            tab: 'vsb.store::lang.product.settings'
+        sku:
+            label: 'vsb.store::lang.product.sku'
+            oc.commentPosition: ''
+            span: auto
+            required: 1
+            type: text
+            tab: 'vsb.store::lang.product.settings'
+        type:
+            label: 'vsb.store::lang.product.type'
+            oc.commentPosition: ''
+            options:
+                simple: Простой
+            span: auto
+            required: 1
+            type: dropdown
+            tab: 'vsb.store::lang.product.settings'
+        price:
+            label: 'vsb.store::lang.product.price'
+            oc.commentPosition: ''
+            span: left
+            required: 1
+            type: number
+            tab: 'vsb.store::lang.product.settings'
+        description:
+            label: 'vsb.store::lang.product.description'
+            size: small
+            oc.commentPosition: ''
+            span: full
+            required: 0
+            type: textarea
+            tab: 'vsb.store::lang.product.settings'
+        stock_start:
+            label: 'vsb.store::lang.stock.start'
+            oc.commentPosition: ''
+            mode: datetime
+            span: auto
+            type: datepicker
+            tab: 'vsb.store::lang.plugin.stock_price'
+        stock_end:
+            label: 'vsb.store::lang.stock.end'
+            oc.commentPosition: ''
+            mode: datetime
+            span: auto
+            type: datepicker
+            tab: 'vsb.store::lang.plugin.stock_price'
+        stock_price:
+            label: 'vsb.store::lang.stock.price'
+            oc.commentPosition: ''
+            span: auto
+            type: number
+            tab: 'vsb.store::lang.plugin.stock_price'

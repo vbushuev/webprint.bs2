@@ -95,18 +95,18 @@ window.vsbContructor={
         var s = '',that = this,self = window.vsbContructor,
             textBox = function(obj){
                 var bg = $('<div class="ui icon basic buttons"></div>').appendTo(self.htmlSetting), modifier = obj;
-                $('<button class="ui basic button" data-category="fontWeight" data-toggle="true" data-active="bold" data-passive="normal"><i class="align bold icon"></i></button>').appendTo(bg);
-                $('<button class="ui basic button" data-category="fontStyle" data-toggle="true" data-active="italic" data-passive="normal"><i class="align italic icon"></i></button>').appendTo(bg);
+                $('<button class="ui basic button" data-category="fontWeight" data-toggle="true" data-active="bold" data-passive="normal" data-title="Жирный шрифт"><i class="align bold icon"></i></button>').appendTo(bg).popup();
+                $('<button class="ui basic button" data-category="fontStyle" data-toggle="true" data-active="italic" data-passive="normal" data-title="Наклонный шрифт"><i class="align italic icon"></i></button>').appendTo(bg).popup();
                 bg = $('<div class="ui icon basic buttons"></div>').appendTo(self.htmlSetting);
-                $('<button class="ui basic button" data-category="fontSize" data-action="decrease" data-step="2"><i class="font icon"></i><i class="long arrow down icon"></i></button>').appendTo(bg);
-                $('<button class="ui basic button" data-category="fontSize" data-action="increase" data-step="2"><i class="font icon"></i><i class="long arrow up icon"></i></button>').appendTo(bg);
-                var dd = $('<div class="ui basic button dropdown"></div>').appendTo(bg);
+                $('<button class="ui basic button" data-title="Уменьшить штрифт" data-category="fontSize" data-action="decrease" data-step="2"><i class="font icon"></i><i class="long arrow down icon"></i></button>').appendTo(bg).popup();
+                $('<button class="ui basic button" data-title="Увеличить штрифт" data-category="fontSize" data-action="increase" data-step="2"><i class="font icon"></i><i class="long arrow up icon"></i></button>').appendTo(bg).popup();
+                var dd = $('<div class="ui basic button dropdown" data-title="Выбрать штрифт"></div>').appendTo(bg).popup();
                 dd.append('<i class="align icon font"></i><span class=" default text">'+modifier.fontFamily+'</span>');
                 dd = $('<div class="menu buttons"></div>').appendTo(dd);
-                $('<div class="item button" data-category="fontFamily" data-value="Arial"><span class="text" style="font-family:\'Arial\'">Arial</span></div>').appendTo(dd);
-                $('<div class="item button" data-category="fontFamily" data-value="Open Sans"><span class="text" style="font-family:\'Open Sans\'">Open Sans</span></div>').appendTo(dd);
-                $('<div class="item button" data-category="fontFamily" data-value="Times"><span class="text" style="font-family:\'Times\'">Times</span></div>').appendTo(dd);
-                dd = $('<div class="ui basic dropdown button"></div>').appendTo(bg);
+                $('<div class="item button" data-category="fontFamily" data-value="Arial"><span class="text" style="font-family:\'Arial\'">Arial</span></div>').appendTo(dd).popup();
+                $('<div class="item button" data-category="fontFamily" data-value="Open Sans"><span class="text" style="font-family:\'Open Sans\'">Open Sans</span></div>').appendTo(dd).popup();
+                $('<div class="item button" data-category="fontFamily" data-value="Times"><span class="text" style="font-family:\'Times\'">Times</span></div>').appendTo(dd).popup();
+                dd = $('<div class="ui basic dropdown button" data-title="Изменить цвет шрифта"></div>').appendTo(bg).popup();
                 dd.append('<span class="default text"><i class="vsb-color-box" style="background-color:'+modifier.fill+'"></i></span>');
                 dd = $('<div class="menu buttons"></div>').appendTo(dd);
                 $('<div class="item button" data-category="fill" data-action="set" data-value="black"><span class="text black"><i class="black vsb-color-box"></i></span></div>').appendTo(dd);
@@ -116,10 +116,10 @@ window.vsbContructor={
                 $('<div class="item button" data-category="fill" data-action="set" data-value="red"><span class="text"><i class="red vsb-color-box"></i></span></div>').appendTo(dd);
 
                 bg = $('<div class="ui icon basic buttons"></div>').appendTo(self.htmlSetting);
-                $('<button class="ui basic button" data-category="textAlign" data-value="left"><i class="align left icon"></i></button>').appendTo(bg);
-                $('<button class="ui basic button" data-category="textAlign" data-value="center"><i class="align center icon"></i></button>').appendTo(bg);
-                $('<button class="ui basic button" data-category="textAlign" data-value="right"><i class="align right icon"></i></button>').appendTo(bg);
-                $('<button class="ui basic button" data-category="textAlign" data-value="justify"><i class="align justify icon"></i></button>').appendTo(bg);
+                $('<button class="ui basic button" data-title="Выровнять по левому краю" data-category="textAlign" data-value="left"><i class="align left icon"></i></button>').appendTo(bg).popup();
+                $('<button class="ui basic button" data-title="Выровнять по центру" data-category="textAlign" data-value="center"><i class="align center icon"></i></button>').appendTo(bg).popup();
+                $('<button class="ui basic button" data-title="Выровнять по правому краю" data-category="textAlign" data-value="right"><i class="align right icon"></i></button>').appendTo(bg).popup();
+                $('<button class="ui basic button" data-title="Выровнять по всей ширине" data-category="textAlign" data-value="justify"><i class="align justify icon"></i></button>').appendTo(bg).popup();
 
                 self.htmlSetting.find(".dropdown").dropdown();
                 self.htmlSetting.find(".button").on("click",function(e){self.modificator($(this),modifier)});
@@ -131,7 +131,7 @@ window.vsbContructor={
                 break;
             default:
         }
-        $('<button class="ui basic button floated right icon"><i class="align trash icon"></i></button>').appendTo(self.htmlSetting).on('click',function(e){
+        $('<button class="ui basic button floated right icon" data-title="Удалить объект"><i class="align trash icon"></i></button>').appendTo(self.htmlSetting).popup().on('click',function(e){
             self.canvas.remove(obj);
         });
         return self;

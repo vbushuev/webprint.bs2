@@ -1,0 +1,4 @@
+title: TemplateController
+modelClass: Vsb\Store\Models\ProductTemplate
+toolbar:
+    buttons: reorder_toolbar
